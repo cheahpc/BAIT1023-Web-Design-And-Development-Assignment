@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/*import front-family and font-size*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+/*All font family style*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*body element part style*/
+body {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/*set for h3 tag (heading) font size*/
+h3 {
+    font-size: 30px;
+}
+
+/*set for div tag part style*/
+div {
+    /*set cursor as context-menu*/
+    cursor: context-menu;
+}
+
+/*set for class="content_container" part style*/
+.content_container {
+    background-image: url(../images/bg01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right 0px bottom 0px;
+    height: 650px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/*set for class="container" part style*/
+.container {
+    width: 500px;
+    max-width: 500px;
+    height: 300px;
+    margin: auto;
+    padding: 2rem; /*2rem=32px*/
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background: white;
+    text-align: center;
+}
+
+/*div tag class="text2" part style*/
+div .text2 {
+    margin-top: 80px;
+    font-size: 25px;
+}
+
+/*p tag (paragraph) part*/
+p {
+    /*to set margin top as 55px and font size as 20px*/
+    margin-top: 80px;
+    font-size: 28px;
+}
+
+/*set for class="link" part style*/
+.link {
+    font-size: 1.3rem;
+    color: #252c6a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*set for class="link" part to change the colour when cursor touched*/
+.link:hover {
+    color: rgba(35, 89, 207, 0.938);
+}

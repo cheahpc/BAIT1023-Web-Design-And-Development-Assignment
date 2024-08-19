@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+/*import front-family and font-size*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+
+/*For HTML Element*/
+:root {
+    /*for reference use*/
+    --colour-white: #ffffff;
+    --border-radius: 4px;
+}
+
+/*set front-family for all in HTML*/
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*body tag part style*/
+body {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    background: lightgrey;
+}
+
+/*set for class="content_container" part style*/
+.content_container {
+    background-image: url(../images/bg01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+}
+
+/*set for class="container" part style*/
+.container {
+    width: 480px;
+    margin: 50px 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem; /*2rem=32px*/
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: var(--colour-white);
+}
+
+/*set for class="logo" part style*/
+.logo {
+    display: block;
+    margin-left: 43%;
+    margin-right: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+/*set for class="form_title" part style*/
+.form_title {
+    margin: 30px 0px;
+    text-align: center;
+    cursor: default;
+}
+
+/*set for class="form_password", class="form_email" and class="form_password-comfirm" part font style*/
+.form_password,
+.form_email,
+.form_password-comfirm {
+    font-weight: bold;
+}
+
+/*class="form_input-group" to set margin top as 0.5rem and bottom as 1 rem*/
+.form_input-group {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/*set for class="form_input" part style*/
+.form_input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-colour 0.2s;
+}
+
+/*validate check for user input*/
+/*valid input*/
+input#email.form_input:focus:valid:focus,
+input#new_pw.form_input:valid:focus,
+input#comfirm_pw.form_input:valid:focus {
+    border-color: limegreen;
+    background: var(--colour-white) url(../images/valid_icon.jpg) right/contain no-repeat;
+}
+
+/*invalid input*/
+input#email.form_input:invalid:focus,
+input#new_pw.form_input:invalid:focus,
+input#comfirm_pw.form_input:invalid:focus {
+    border-color: red;
+    background: var(--colour-white) url(../images/invalid_icon.jpg) right/contain no-repeat;
+}
+
+/*set for class="form_button" part style*/
+.form_button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: black;
+    border: 1px solid black;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--colour-white);
+}
+
+/*set for class="form_button" part when cursor touched change background colour*/
+.form_button:hover {
+    background: rgba(168, 162, 162, 0.767);
+}
+
+/*set for class="form_button" part to transform the button scale to become smaller when clicked*/
+.form_button:active {
+    transform: scale(0.9);
+}
+
+/*turn cursor to context-menu when cursor move to label tag part*/
+label {
+    cursor: context-menu;
+}
+
+/*set for class="form_text1" part to set margin top as 45px*/
+.form_text1 {
+    margin-top: 45px;
+}
+
+/*set for class="form_text1" and class="form_text2" part to set text align as center*/
+.form_text1,
+.form_text2 {
+    text-align: center;
+}
+
+/*set for class="form_link" part style*/
+.form_link {
+    color: rgb(145, 145, 145);
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*set for class="form_link" part to change the colour when cursor touched*/
+.form_link:hover {
+    color: #252c6a;
+}

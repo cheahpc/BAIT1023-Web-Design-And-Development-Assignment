@@ -1,0 +1,97 @@
+/*img slide*/
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+.slider{
+    float: right;
+    width: 800px;
+    height: 529px;
+    overflow: hidden;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 20%;
+    left: 75%;
+    transform: translateX(-50%);
+    display: flex;
+    float: right;
+}
+
+.bar{
+    width: 100px;
+    height: 20px;
+    border: 2px solid #b9b9b9;
+    margin: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover{
+    background: #fff;
+}
+
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+}
+.slides{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 20%;
+    transition: 0.6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1{
+    margin-left: -20%;
+}
+
+h1 {
+    color: black;
+    font-size: 70px;
+    font-weight: 100px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: black;
+    font-size: 50px;
+    padding-left: 170px;
+    padding-bottom: 21px;
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+h4 {
+    color: black;
+    font-size: 20px;
+    font-weight: 1000;
+    padding-top: 10px;
+    text-align: center;
+}

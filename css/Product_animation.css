@@ -1,0 +1,100 @@
+/* #region Menu */
+
+:root {
+    --primary_color: rgb(0, 0, 0);
+}
+
+@keyframes opcacity_In {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacity_out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+.menu_item_text,
+.category_item_text {
+    transition: 0.2s;
+}
+
+.menu_item:hover .menu_item_text,
+.category_item:hover .category_item_text {
+    transition: 0.2s;
+    transform: scale(1.2);
+    color: var(--primary_color);
+}
+
+.category_item_icon {
+    opacity: 0;
+    transition: 0.2s;
+}
+
+
+.category_item:hover .category_item_icon {
+    opacity: 1;
+    color: var(--primary_color);
+}
+
+.submenu_container,
+.submenu_right_container,
+.submenu_wallpaper_container {
+    
+    pointer-events: none;
+    animation: opacity_out 0.4s forwards;
+}
+
+
+.category_item:hover .submenu_right_container,
+.category_item:hover .submenu_wallpaper_container,
+.menu_item:hover .submenu_container {
+    pointer-events: all;
+    animation: opcacity_In 0.4s forwards;
+}
+
+.submenu_container:hover,
+.submenu_right_item_title:hover,
+.submenu_right_item:hover {
+    color: var(--primary_color);
+}
+
+.container {
+    justify-content: space-evenly;
+    align-items: right;
+    text-align: right;
+    float: right;
+}   
+
+.btn-1 {
+    width: 800px;
+    height: 110px;
+    border: 5px solid #000;
+    color: #000;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 #000;
+    transition: ease-out 0.3s;
+    font-size: 2rem;
+    outline: none;
+    float: right;
+}
+
+.btn-1:hover {
+    box-shadow: inset 800px 0 0 0 #000;
+    cursor: pointer;
+    color: white;
+}
+

@@ -1,0 +1,35 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #757575;
+
+}
+
+html {
+    background: rgb(255, 255, 255);
+}
+
+/* Icon Size */
+.material-icons.md-18 {
+    font-size: 18px;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+.material-icons.md-28 {
+    font-size: 28px;
+}
+.material-icons.md-32 {
+    font-size: 32px;
+}
+
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+/* 
+
+header {
+    font-weight: 400;
+} */

@@ -1,0 +1,102 @@
+* {
+    color: #757575;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.623)),
+        url(../images/bg01.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 56px;
+}
+
+
+.r1_container {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    height: 650px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(/images/about_us_bg.jpg);
+    background-size: cover;
+    position: relative;
+
+}
+
+.r1_container h1 {
+    display: flex;
+    position: relative;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.about_text {
+    display: flex;
+    position: relative;
+    color: white;
+    text-align: justify;
+    margin: 20px 250px;
+
+}
+
+.r0_slide_container {
+
+
+    margin: 150px;
+}
+
+.r0_slide_container * {
+    color: #252525;
+    margin: 50px 0px;
+}
+
+
+
+.r2_container,
+.r3_container {
+    
+    margin: 150px 0px 0px 0px;
+    display: flex;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+}
+
+.r2_container img,
+.r3_container img {
+    height: 100%;
+    align-items: center;
+}
+
+.r2_container h1,
+.r3_container h1 {
+    color: #353535;
+}
+
+.r2_container p,
+.r3_container p {
+    margin-left: 50px;
+    font-size: 26px;
+}
+
+.r2_container img {
+    display: flex;
+    margin-left: auto;
+}
+
+.r2_container h1 {
+    margin-left: 200px;
+}
+.r3_container h1 {
+    margin-left: 200px;
+}

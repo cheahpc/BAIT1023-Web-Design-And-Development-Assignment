@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/*import front-family and font-size*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/*set style for all in HTML*/
+* {
+	font-family: 'Roboto', sans-serif;
+	color: #757575;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+
+/*body part*/
+/*set for class="container" part style*/
+.container {
+	border-top: solid 3px rgb(68, 68, 68);
+	max-width: 100%;
+	padding: 0px 50px;
+	margin: 0 auto;
+	width: auto;
+	background-image: url(../images/bg01.png);
+	background-size: cover;
+}
+
+/*For class="container" heading part set padding top and bottom as 20px, left and right as 0px*/
+.container>h1 {
+	padding: 20px 0;
+}
+
+/*Displays element with class="cart" as a block-level flex container*/
+.cart {
+	display: flex;
+}
+
+/*class="products" set flex as 0.75*/
+.products {
+	flex: 0.75;
+}
+
+/*set for class="products" style*/
+.product {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+	border: 1px solid silver;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+/*set for class="product" style when the cursor touch it*/
+.product:hover {
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	transform: scale(1.01);
+}
+
+/*set image become bigger a little when the cursor touch it it*/
+.product a>img:hover {
+	transform: scale(1.04);
+}
+
+/*set for class="product-info" part style*/
+.product-info {
+	padding: 20px;
+	width: 100%;
+	position: relative;
+}
+
+/*Set element cursor as context-menu*/
+input,
+h1,
+h3,
+h4,
+p {
+	cursor: context-menu;
+}
+
+/*Set element margin bottom as 15px*/
+.product-name,
+.product-price {
+	margin-bottom: 15px;
+}
+
+/*set for class="product-remove" part style*/
+.product-remove {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	padding: 8px 8px;
+	background-color: lightgrey;
+	color: black;
+	cursor: pointer;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+
+/*set for class="product-remove" part style when cursor touched it*/
+.product-remove:hover {
+	background-color: white;
+	color: green;
+	border: 1px solid green;
+}
+
+/*set the element colour as green when cursor touched it*/
+.product-remove:hover .trash_icon,
+.product-remove:hover .remove {
+	color: green;
+}
+
+/*for class="product-remove" part set it become smaller when clicking*/
+.product-remove:active {
+	transform: scale(0.9);
+}
+
+/*set for label tag style*/
+label {
+	margin-top: 15px;
+	display: inline-block;
+	font-weight: bold;
+}
+
+/*set for class="product-qty" imput tag part style*/
+.product-qty>input {
+	width: 40px;
+	padding: 2px;
+	text-align: center;
+	display: inline-block;
+}
+
+/*set size of product image*/
+.product a>.product10_img {
+	display: flex;
+	margin: auto;
+	height: 130px;
+}
+
+/*set size of product image*/
+.product a>.product6_img {
+	display: flex;
+	margin: auto;
+	height: 140px;
+}
+
+/*set size of product image*/
+.product a>.product13_img {
+	display: flex;
+	margin: auto;
+	height: 100px;
+}
+
+/*set size of product image*/
+.product a>.product21_img {
+	display: flex;
+	margin: auto;
+	height: 100px;
+}
+
+/*set trash icon style*/
+.trash_icon {
+	color: rgb(100, 100, 100);
+	margin-right: 5px;
+	height: 28px;
+}
+
+/*set for class="cart-total" part style*/
+.cart-total {
+	flex: 0.25;
+	margin-left: 20px;
+	padding: 20px;
+	height: 240px;
+	border: 1px solid silver;
+	border-radius: 5px;
+}
+
+/*set for class="cart-total" part style when the cursor touch it*/
+.cart-total:hover {
+	border: none;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+	transform: scale(1.01);
+}
+
+/*class="cart-total" span tag part to set colour*/
+.cart-total span {
+	color: rgb(87, 80, 80);
+}
+
+/*set for class="cart-total" paragraph element part style*/
+.cart-total p {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	font-size: 20px;
+}
+
+/*set for class="cart-total" anchor element part style*/
+.cart-total a {
+	display: block;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	background-color: lightgrey;
+	color: rgb(87, 80, 80);
+	text-decoration: none;
+}
+
+/*set for class="cart-total" anchor element part style when curser touched*/
+.cart-total a:hover {
+	background: white;
+	color: green;
+	border: 1px solid green;
+}
+
+/*class="cart-total" anchor element part set smaller when clicked*/
+.cart-total a:active {
+	transform: scale(0.98);
+}
+
+/* On screens that are 700px or less, to set the style*/
+@media screen and (max-width: 700px) {
+
+	/*set for class="remove" display it as none*/
+	.remove {
+		display: none;
+	}
+
+	/*set for class="product" part height as 150px*/
+	.product {
+		height: 150px;
+	}
+
+	/*set element margin bottom as 10px*/
+	.product-name,
+	.product-price,
+	.product-offer,
+	.product-voucher {
+		margin-bottom: 10px;
+	}
+
+}
+
+/* On screens that are 900px or less, to set the style*/
+@media screen and (max-width: 900px) {
+
+	/*set for class="product" part height as 200px*/
+	.product {
+		height: 200px;
+	}
+
+	/*set for class="cart" part flex direction as cloumn*/
+	.cart {
+		flex-direction: column;
+	}
+
+	/*set for class="cart-total" part margin left as 0 and bottom as 10px*/
+	.cart-total {
+		margin-left: 0;
+		margin-bottom: 10px;
+	}
+
+}

@@ -1,0 +1,231 @@
+@charset "utf-8";
+
+/*Import front-family and font-size*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Assignment
+   Technology & Services - Product Delivery & Shipping Style Sheet
+   Author: Ng Chun Shen
+   Filename: product_delivery&shipping.css
+*/
+
+/*Set all font styles*/
+* {
+    color: black;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/*Set body background image*/
+body{
+  background-image: url(../images/background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*Set h1 styles*/
+h1 {
+  padding-top: 3%;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/*Set fieldset of delivery address styles*/
+fieldset.delivery_address{
+  display: block;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 2px grey;
+  width: 900px;
+}
+
+/*Set fieldset of ordered styles*/
+fieldset.ordered { 
+  display: block;
+  margin: 3% auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  width: 1150px;
+  background-color: whitesmoke;
+  box-shadow: 5px 5px 2px grey;
+}
+
+/*Set legend font size and margin*/
+legend{
+  font-size: 25px;
+  margin: 2%;
+}
+
+/*Set button styles*/
+button {
+  border: 3px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+  font-size: 15px;
+  float: right;
+}
+
+/*Set label, input, text area styles*/
+label, input, textarea{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+/*Set input width and text align*/
+input{
+  width: 200px;
+  text-align: center;
+}
+
+/*Set address and city width*/
+#address, #city{
+  width: 300px;
+}
+
+/*Set submit padding*/
+#submit{
+    padding: 10px;  
+}
+
+/*Set table of form styles*/
+table.form{
+  border: 0px solid white;
+  text-align: center;
+  margin: 2% auto;
+  border-collapse: collapse;
+  width: 800px;
+  transition: width 1s; 
+}
+
+/*Add hover effects to table of form*/
+table.form:hover{
+  width: 850px;
+  box-shadow: 5px 5px 2px grey;
+}
+
+/*Set table of item styles*/
+table.item{
+  border: 1px solid black;
+  text-align: center;
+  margin: 2% auto;
+  border-collapse: collapse;
+  width: 1050px;
+  transition: width 1s; 
+  font-size: 15px;
+}
+
+/*Add hover effects to table of item*/
+.item:hover{
+  width: 1100px;
+  box-shadow: 5px 5px 2px grey;
+}
+
+/*Set table header and footer styles*/
+thead, tfoot{
+  background-color: rgba(184, 184, 184, 0.753);
+  color: white;
+}
+
+/*Set table head padding*/
+table.item th{
+  padding: 5px;
+}
+
+/*Set table data padding*/
+table.item td{
+  padding: 20px;
+}
+
+/*Set table body background color and border*/
+tbody{
+  background-color: white;
+  border: 1px solid black;
+}
+
+/*Set select to sursor pointer and padding*/
+select{
+    cursor: pointer;
+    padding: 5px;
+}
+
+/*Add hover effects to select*/
+select:hover{
+    background-color: rgba(255, 255, 0, 0.2);
+}
+
+/*Set textarea styles*/
+textarea{
+    float: left;
+    width: 250px;
+    height: 15px;
+    padding: 5px;
+}
+
+/*Set validate of input styles*/
+input#address:focus:valid,
+input#postal_code:focus:valid,
+input#city:focus:valid,
+input#state:focus:valid,
+input#phone:focus:valid {
+  background: rgb(220,255,220);
+}
+
+/*Set invalidate of input styles*/
+input#address:focus:invalid,
+input#postal_code:focus:invalid,
+input#city:focus:invalid,
+input#state:focus:invalid,
+input#phone:focus:invalid {
+  background: rgba(252, 133, 133, 0.781);
+}
+
+/*Set div of back button styles*/
+div.back{
+    float: left;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    width: 100px;
+    transition: width 1s;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Add hover effects to back button*/
+div.back:hover{
+    background-color: lightblue;
+    width: 150px;
+    color: white;
+    box-shadow: 5px 5px 2px grey;
+}
+
+/*Set div of payment button styles*/
+div.payment{
+    float: right;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+    width: 100px;
+    transition: width 1s;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*Add hover effects to payment button*/
+div.payment:hover{
+    background-color: lightgreen;
+    width: 150px;
+    color: white;
+    box-shadow: 5px 5px 2px grey;
+}

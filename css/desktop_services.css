@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/*Import front-family and font-size*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Assignment
+   Technology & Services - Desktop Services Style Sheet
+   Author: Ng Chun Shen
+   Filename: desktop_services.css
+*/
+
+/*Set all font styles*/
+* {
+    color: black;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/*Set body background image*/
+body{
+  background-image: url(../images/bg01.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/*Set image container styles*/
+div.services_container{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../images/services.jpg");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*Set h1 styles*/
+h1{
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    font-weight: bold;
+    color: white;
+    margin: 10% 32%;
+}
+
+/*Set container display grid*/
+div.container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+/*Set h2 position*/
+h2 {
+  text-align: center;
+  margin: 30px;
+}
+
+/*Set p margin*/
+p {
+  margin: 30px 0px;
+}
+
+/*Set fieldset styles*/
+fieldset {
+  background-image: linear-gradient(to bottom right, grey, rgb(255, 255, 255));
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 0px 40px;
+  font-size: 15px;
+  width: 1200px;
+  height: 220px;
+  align-items: center;
+  box-shadow: 10px 10px 5px grey;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: width 1s;
+} 
+
+/*Add hover effect to fieldset*/
+fieldset:hover {
+  width: 1250px;
+}
+
+/*Set image styles*/
+div.image{
+  width: 700px;
+  height: 500px;
+  margin-top: -200px;
+  margin-left: 50px;
+}
+
+/*Set sentences to the right*/
+div.sentences{
+  float: right;
+}
+
+/*Set picture styles*/
+img.picture{
+  width: 100%;
+  height: 100%;
+  border: 3px solid black;
+  border-radius: 30px;
+  transition: width 1s;
+  float: left;
+}
+
+/*Add hover effect to the picture*/
+img.picture:hover{
+  width: 102%;
+}
+
+/*Set legend styles*/
+legend{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/*Set unorderlist styles*/
+ul.list {
+  display: table-row;
+}
+
+/*Set list issue styles*/
+li.issue {  
+  font-size: 15px;
+  display: table-cell;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/*Add hover effect to the list issue*/
+li.issue:hover {
+  font-weight: bold;
+}
+
+/*Set button styles*/
+div.icon-button {
+  border: 3px solid black;
+  border-radius: 10px;
+  font-weight: bold;
+  height: 30px;
+  width: 200px;
+  font-size: 15px;
+  text-align: center;
+  padding-top: 10px;
+  background-color: white;
+  float: right;
+  margin-top: -55px;
+  margin-right: 130px;
+}
+
+/*Add hover effect to the button*/
+div.icon-button:hover {
+  box-shadow: 3px 3px 5px grey;
+  background-color: black;
+  color: white;
+}
+
